@@ -1,11 +1,9 @@
 
-In this tutorial, you will:
+👋 Welcome! In this tutorial, you will:
 
 - Create an Android application configured with Amplify
-- Use DataStore to model and persist data
+- Use Amplify DataStore to model and persist data
 - Connect your local data to synchronize to a cloud backend
-
-You will create a Todo app using Amplify DataStore as a local-only persistence mechanism. DataStore provides a programming model for storing data offline and online without writing additional code. 
 
 ## Prerequisites
 
@@ -15,17 +13,18 @@ You will create a Todo app using Amplify DataStore as a local-only persistence m
 
   </amplify-callout>
 
-- [Install Node.js](https://nodejs.org/en/) version 10 or higher
-- [Install Android Studio](https://developer.android.com/studio/index.html#downloads) version 3.6 or higher
-- [Install Android SDK](https://developer.android.com/studio/releases/platforms) with a minimum API level of 16 (Jelly Bean)
-- Create a new Android application. If you are new to Android development, you can follow [these steps](https://developer.android.com/training/basics/firstapp/creating-project)
-- Install the latest version of the Amplify CLI by running:
+- Install [Node.js](https://nodejs.org/en/) version 10 or higher
+- Install [Android Studio](https://developer.android.com/studio/index.html#downloads) version 3.6 or higher
+- Install the [Android SDK](https://developer.android.com/studio/releases/platforms) API level 16 (Jelly Bean) or higher
+- Install the latest version of the [Amplify CLI](~/cli/cli.md) by running:
 
     ```bash
     npm install -g @aws-amplify/cli
     ```
 
 ## Configure your application
+
+1. Create a new Android application in **Android Studio**. If you are new to Android development, you can follow [these steps](https://developer.android.com/training/basics/firstapp/creating-project) in the Android documentation to create a new project in either Java or Kotlin.
 
 1. Open your **project** `build.gradle` and add the following:
     - `mavenCentral()` in the `repositories` block
@@ -67,7 +66,7 @@ You will create a Todo app using Amplify DataStore as a local-only persistence m
 
 1. Run **Make Project**
 
-    When the build is successful, it will add two Gradle tasks to you project - `modelgen` and `amplifyPush`. (In the Android Studio UI, these tasks can be found in the top bar, up where you would run your project. Look for a drop-down menu displaying the word "app", if it's a new project.)
+    When the build is successful, two new Gradle tasks will be added to your project - `modelgen` and `amplifyPush`. In the Android Studio, you'll find these tasks in the top bar in a dropdown menu. Look for a drop-down menu displaying the word "app", if it's a new project.
 
     <amplify-callout>
 

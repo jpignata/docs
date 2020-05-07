@@ -1,3 +1,5 @@
+Next you'll use the generated Todo model to create, update, query, and delete data. In this section you'll initialize DataStore, and then manipulate Todo items.
+
 ## Configure Amplify and DataStore
 
 First, we'll add the DataStore plugin and configure Amplify. Typically, a good place to do this is in the [`onCreate()`](https://developer.android.com/reference/android/app/Application#onCreate()) method of [Android's `Application` class](https://developer.android.com/reference/android/app/Application). For the purposes of this tutorial, you can place these examples in the `onCreate()` method of the `MainActivity` class.

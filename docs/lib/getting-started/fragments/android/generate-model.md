@@ -1,4 +1,4 @@
-In the next step, you will model your data and generating models which are used by DataStore. [GraphQL](http://graphql.org/) is used as a common language across all supported platforms for this process, and is also used as the network protocol when syncing with the cloud. You will define a schema to store your Todo records, and then generate models to create, read, update, and delete these records. If you'd like, first [learn more](~/cli/graphql-transformer/overview.md) about annotating GraphQL schemas and data modeling.
+With the basic setup complete, next you will model the data your application will store. You'll use Amplify DataStore to persist your application's data. DataStore provides a programming model for storing data offline and online without writing additional code. DataStore models are specified as [GraphQL](http://graphql.org/) schemas. If you'd like, first [learn more](~/cli/graphql-transformer/overview.md) about annotating GraphQL schemas and data modeling.
 
 1. Switch to **Project** view in Android Studio and open the schema file at `amplify/backend/api/amplifyDatasource/schema.graphql`.  
 
