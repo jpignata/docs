@@ -98,7 +98,7 @@ Now that your have DataStore persisting data locally, in the next step you'll co
 
 1. Hit the Play button to run the query. This will return all of the synchronized Todos:
 
-    ```graphql
+    ```json
     {
       "data": {
         "listTodos": {
